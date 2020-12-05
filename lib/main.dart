@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 void main() {
-  return runApp(MaterialApp(
+  return runApp(new MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: SplashWidget(),
+    home: new SplashWidget(),
   ));
 }
 
 class SplashWidget extends StatefulWidget {
-  SplashWidget({Key key}) : super(key: key);
+  // SplashWidget({Key key}) : super(key: key);
 
   @override
   _SplashWidgetState createState() => _SplashWidgetState();
@@ -23,10 +23,10 @@ class _SplashWidgetState extends State<SplashWidget> {
       seconds: 5,
       navigateAfterSeconds: new DicePage(),
       title: new Text(
-        'Ahmar Tariq - FA17-BSE-003',
+        'FA17-BSE-008 (Farman Ali)',
         style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
       ),
-      image: Image.asset('assets/images/ahmar.jpg'),
+      image: Image.asset('assets/images/farman.jpg'),
       photoSize: 100,
       backgroundColor: Colors.white,
       loaderColor: Colors.red,
@@ -45,7 +45,7 @@ class AppLoader extends StatelessWidget {
         title: Text('Dice Game'),
         backgroundColor: Colors.blue,
       ),
-      body: DicePage(),
+      body: new DicePage(),
     );
   }
 }
